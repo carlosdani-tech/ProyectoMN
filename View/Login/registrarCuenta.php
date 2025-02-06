@@ -39,6 +39,7 @@
                             <div class="text-center">
                                 <h1 class="h4 text-gray-900 mb-4">Crear Cuenta</h1>
                             </div>
+                            
                             <form action="" method="POST" class="user">
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user"
@@ -60,6 +61,7 @@
                                 <input type="submit" class="btn btn-danger btn-user btn-block" value="Procesar"
                                         id="btnRegistrarCuenta" name="btnRegistrarCuenta" >
                             </form>
+
                             <hr>
                             <div class="text-center">
                                 <a class="small" href="recuperarContrasenna.php">Recuperar Contraseña</a>
