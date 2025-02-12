@@ -9,6 +9,7 @@
         $resultado = $context -> query($sentencia);
 
         CerrarBaseDatos($context);
+        return $resultado;
     }
 
     function IniciarSesionModel($identificacion,$contrasenna)
@@ -19,6 +20,7 @@
         $resultado = $context -> query($sentencia);
 
         CerrarBaseDatos($context);
+        return $resultado;
     }
 
 ?>
