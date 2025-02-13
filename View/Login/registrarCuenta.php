@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<? PrintHeader(); ?>
+<?php PrintHeader(); ?>
 
 <body class="bg-gradient-primary">
 
@@ -30,7 +30,7 @@
                             <?php
                                 if(isset($_POST["Message"]))
                                 {
-                                    echo $_POST["Message"];
+                                    echo '<div class="alert alert-warning Mensajes">' . $_POST["Message"] . '</div>';                                   
                                 }
                             ?>
                             
@@ -38,7 +38,7 @@
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user"
                                     placeholder="Identificación" id="txtIdentificacion" name="txtIdentificacion"
-                                    onkeyup="ConsultarNombre()">
+                                    onkeyup="ConsultarNombre()" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control form-control-user"
@@ -46,11 +46,11 @@
                                 </div>
                                 <div class="form-group">
                                     <input type="email" class="form-control form-control-user"
-                                        placeholder="Correo" id="txtCorreo" name="txtCorreo">
+                                        placeholder="Correo" id="txtCorreo" name="txtCorreo" required>
                                 </div>
                                 <div class="form-group">
                                     <input type="password" class="form-control form-control-user"
-                                        placeholder="Contraseña" id="txtContrasenna" name="txtContrasenna">
+                                        placeholder="Contraseña" id="txtContrasenna" name="txtContrasenna" required>
                                 </div>
                                 <input type="submit" class="btn btn-danger btn-user btn-block" value="Procesar"
                                         id="btnRegistrarCuenta" name="btnRegistrarCuenta" >
@@ -73,7 +73,7 @@
 
     </div>
 
-    <? PrintFooter(); ?>
+    <?php PrintFooter(); ?>
 
 </body>
 
