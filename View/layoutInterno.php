@@ -76,13 +76,13 @@
         if(isset($_SESSION["IdPerfil"]) && $_SESSION["IdPerfil"] == "1")
         {
             echo '<li class="nav-item">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="../Puestos/consultarPuestos.php">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Mant. Puestos</span></a>
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">
+                    <a class="nav-link" href="../Ofertas/consultarOfertas.php">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Mant. Ofertas</span></a>
                 </li>';
@@ -98,14 +98,14 @@
 
         echo '<hr class="sidebar-divider">
         
-        <div class="text-center d-none d-md-inline">
-            <button class="rounded-circle border-0" id="sidebarToggle"></button>
-        </div>
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
 
-    </ul>';
+        </ul>';
     }
 
-    function PrintHeader()
+    function PrintCss()
     {
         echo '<head>
                 <meta charset="utf-8">
@@ -121,12 +121,23 @@
             </head>';   
     }
 
-    function PrintFooter()
+    function PrintScript()
     {
         echo '<script src="../Scripts/jquery.min.js"></script>
               <script src="../Scripts/bootstrap.bundle.min.js"></script>
               <script src="../Scripts/jquery.easing.min.js"></script>
               <script src="../Scripts/sb-admin-2.min.js"></script>';
+    }
+
+    function PrintFooter()
+    {
+        echo '<footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2020</span>
+                    </div>
+                </div>
+            </footer>';
     }
 
 ?>

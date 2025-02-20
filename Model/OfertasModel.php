@@ -1,13 +1,13 @@
 <?php
     include_once $_SERVER["DOCUMENT_ROOT"] . "/Proyecto/Model/BaseDatosModel.php";
 
-    function ConsultarPuestosModel()
+    function ConsultarOfertasModel()
     {
         try
         {
             $context = AbrirBaseDatos();
 
-            $sentencia = "CALL SP_ConsultarPuestos()";
+            $sentencia = "CALL SP_ConsultarOfertas()";
             $resultado = $context -> query($sentencia);
     
             CerrarBaseDatos($context);
